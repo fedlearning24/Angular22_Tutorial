@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { User } from './user/user';
 import { DataBinding } from './data-binding/data-binding';
 
 @Component({
