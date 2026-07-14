@@ -17,14 +17,19 @@
     </div>
 
     <div class="p-2">
-        <select class="w-50 bg-gray-400 text-white text-sm cursor-pointer" 
-        (change)="onCountryChange()">
+        <select class="w-50 bg-gray-400 text-white text-sm cursor-pointer" (change)="onCountryChange()">
             <option value="">Select Country</option>
             <option value="India">India</option>
             <option value="Germany">Germany</option>
             <option value="France">France</option>
             <option value="Spain">Spain</option>
         </select>
+    </div>
+
+    <b>4. Two-way Data Binding - ngModel</b> <br>
+    <div class="p-2">
+        <input type="text" class="border border-black" [(ngModel)]="name">
+        <p>{{name}}</p>
     </div>
 
 </div>
