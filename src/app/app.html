@@ -1,1 +1,19 @@
-<app-data-binding />
+<!-- <app-data-binding /> -->
+
+<div class="border-b-2 border-gray-500 py-4 text-center">
+    <h1 class="text-3xl text-blue-700 font-mono">My Angular 22 App</h1>
+</div>
+
+<nav class="border-b-2.border-gray-500.px-6 py-4">
+    <ul class="flex gap-10 font-mono testxl">
+        <li><a routerLink="/">🏠 Home</a></li>
+        <li><a routerLink="pages/about">ℹ️ About</a></li>
+        <li><a routerLink="pages/contact">📞 Contact</a></li>
+        <li><a routerLink="pages/products">📑 Products</a></li> 
+        
+        <!-- <li><a routerLink="/pages/products">📑 Products</a></li>
+        <li><a [routerLink]="'/pages/products'">📑 Products</a></li>
+        <li><a [routerLink]="['/pages/products',id]">📑 Products</a></li> -->
+    </ul>
+</nav>
+<router-outlet></router-outlet>

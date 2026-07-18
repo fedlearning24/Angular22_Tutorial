@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './data-binding.html',
   styleUrl: './data-binding.css',
 })
+
 export class DataBinding {
 
   name: string = "FED Learning";
@@ -22,5 +23,5 @@ export class DataBinding {
   onCountryChange(){
     alert("Country has changed.");
   }
-}
 
+}
