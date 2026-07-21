@@ -6,11 +6,13 @@
 
 <nav class="border-b-2.border-gray-500.px-6 py-4">
     <ul class="flex gap-10 font-mono testxl">
-        <li><a routerLink="/">🏠 Home</a></li>
-        <li><a routerLink="pages/about">ℹ️ About</a></li>
-        <li><a routerLink="pages/contact">📞 Contact</a></li>
-        <li><a routerLink="pages/products">📑 Products</a></li> 
-        
+        <li><a routerLink="pages/home" 
+            routerLinkActive="text-green-700 font-bold"
+            [roterLinkActiveOptions]="{exact : true}">🏠 Home</a></li>
+        <li><a routerLink="pages/about" routerLinkActive="text-blue-700 font-bold">ℹ️ About</a></li>
+        <li><a routerLink="pages/contact" routerLinkActive="text-red-700 font-bold">📞 Contact</a></li>
+        <li><a routerLink="pages/products" routerLinkActive="text-orange-700 font-bold">📑 Products</a></li>
+
         <!-- <li><a routerLink="/pages/products">📑 Products</a></li>
         <li><a [routerLink]="'/pages/products'">📑 Products</a></li>
         <li><a [routerLink]="['/pages/products',id]">📑 Products</a></li> -->
