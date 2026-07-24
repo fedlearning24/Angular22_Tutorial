@@ -6,6 +6,12 @@ import { Products } from './pages/products/products';
 import { Login } from './pages/login/login';
 import { Register } from './pages/register/register';
 import { PageNotFound } from './pages/page-not-found/page-not-found';
+import { ProductDetails } from './pages/product-details/product-details';
+import { Dashboard } from './pages/dashboard/dashboard';
+import { DashboardHome } from './pages/dashboard-home/dashboard-home';
+import { Profile } from './pages/profile/profile';
+import { Settings } from './pages/settings/settings';
+import { Orders } from './pages/orders/orders';
 
 export const routes: Routes = [
     {
@@ -36,6 +42,37 @@ export const routes: Routes = [
     {
         path: 'pages/products',
         component: Products
+    },
+    {
+        path: 'pages/product-details/:id',
+        component: ProductDetails
+    },
+    {
+        path: 'pages/dashboard',
+        component: Dashboard,
+        children: [
+            {
+                path: '',
+                redirectTo: 'dashboardhome',
+                pathMatch: 'full'
+            },
+            {
+                path: 'dashboardhome',
+                component: DashboardHome
+            },
+            {
+                path: 'profile',
+                component: Profile
+            },
+            {
+                path: 'settings',
+                component: Settings
+            },
+            {
+                path: 'orders',
+                component: Orders
+            },
+        ]
     },
     {
         path: '**',
